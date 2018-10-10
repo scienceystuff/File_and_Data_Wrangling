@@ -148,8 +148,8 @@ Note that commands can also be piped to sed:
 
 * sed
 
-        # search for a match to STRING in a file, then modify STRING
-        # note to be extremely wary of the value of STRING for security reasons; sed will expand the variable blindly
+        # search for a match to i in a file, then modify that value
+        # note to be extremely wary of the value of the contents of the variable *i* for security reasons; sed will expand the variable blindly
         export i='SOMEVALUE' ; sed -e "s/AC_000${i}.1/AC_000${i}/g" fastaFileWithIntegersListed.fasta > fastaFileWithIntegersListedModified.fasta
 
 * perl
