@@ -7,5 +7,5 @@ Unless otherwise mentioned, each option is presented as a scenario, with equival
 #### Fastq_File_Manipulation
 * Describes several scenarios for performing fastq and fasta file manipulation.
 
-#### Network Connections
+#### Network_Connections
 * Describes several scenarios for checking network connections, and creating network connections (such as ssh tunnels)
