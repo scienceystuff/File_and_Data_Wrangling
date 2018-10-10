@@ -115,6 +115,7 @@ Note that commands can also be piped to sed:
 * sed
 
         # insert blank newline
+        # credit mojuba StackExchange
         sed -e '1s/^/\'$'\n/' fileToInsertNewline.txt > fileWithInsertedNewline.txt
         # modify in-place
         sed -i.bak '1s/^/\'$'\n/' fileToInsertNewline.txt
