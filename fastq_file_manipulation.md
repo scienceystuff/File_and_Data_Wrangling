@@ -1,4 +1,4 @@
-### Fastq_File_Manipulation
+### Fastq FileManipulation
 Listed are several commands for file manipulation.  Unless specifically noted, all commands will work on any flavor of *nix.
 Bullet points that are labeled with "grep" use grep within a Bash command.  
 
@@ -79,7 +79,7 @@ Note that commands can also be piped to sed:
 1) Count unique fastq headers
 * awk
 
-        # gz-compressed (Note: do not use with tar.gz files!)
+        # gz-compressed (Note: do not use this particular command with tar.gz files!)
         # explanation: This uncompresses a fastq.gz file, then looks for unique fastq headers and returns the count of each
         gzcat fqfile.fastq.gz | awk '/^@A[0-9]+:14:H3[A-Z,0-9]+/{nr[NR]}; NR in nr' | cut -d:  -f1-3 | sort -n | uniq -c >> readNameListOfCounts.txt
         # 
