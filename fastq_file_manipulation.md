@@ -102,7 +102,7 @@ Note that commands can also be piped to sed:
         # remove last line only
         sed '$d' fileToParse.txt > fileThatWasParsed.txt
 
-# bash
+* bash
 
         # remove first and last line
         export V=$(wc -l fileToParse.txt | rev | cut -d\  -f2 | rev) ; let TRIMCT=$V-1 ; let TRIMSTOP=$V-2 ; tail -n $TRIMCT fileToParse.txt | head -n $TRIMSTOP > fileThatWasParsed.txt
