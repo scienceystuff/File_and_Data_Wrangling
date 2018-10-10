@@ -55,3 +55,9 @@ This markdown file described several ways to check network connections or create
         # or do a reverse lookup
         dig -x IPADDR
         
+8) Show all active network connections (Mac OSX only)
+
+        nettop
+        # basically, the top command but for network traffic.  Additional arguments or piping with grep can also be done.
+        
+        
